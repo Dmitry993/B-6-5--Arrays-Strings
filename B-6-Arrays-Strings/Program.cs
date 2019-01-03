@@ -106,9 +106,11 @@ namespace Base.Lesson_6
             string[] words = poem.Split(new char[] { ';' });
             for (int i = 0; i < words.Length; i++)
             {
-                words[i] = words[i].ToLower().Replace("о", "а");
-                words[i] = words[i].ToLower().Replace("л", "ль");
-                words[i] = words[i].ToLower().Replace("ть", "т");
+                words[i] = words[i].ToLower()
+                            .Replace("о", "а")
+                            .Replace("л", "ль")
+                            .Replace("ть", "т");
+
             }
 
             foreach (var wordsArray in words)
